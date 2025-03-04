@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.display-grid {
+  display: grid;
+}
+
+.display-none {
+  display: none;
+}
+
+.grid-column-1fr4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.border-ccc {
+  border: 1px solid #cccccc;
+}
+
+.border-none {
+  border: none;
+}
+
+.font-1 {
+  font-size: 1rem;
+}
+
+.color-black {
+  color: black;
+}
+
+.bg-pastel-blue {
+  background: rgb(214, 230, 245);
+}
+
+.bg-pastel-red {
+  background: rgb(255, 151, 151);
+}
+
+.bg-whitesmoke {
+  background-color: whitesmoke;
+}
+
+.w-10 {
+  width: 10rem;
+}
+
+.w-16 {
+  width: 16rem;
+}
+
+.h-3 {
+  height: 3rem;
+}
+
+.h-20 {
+  height: 20rem;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(0, 217, 255);
+}
+
+.addBtn:hover {
+  background: rgb(0, 217, 255);
+}
+
+.clsBtn:hover {
+  background: rgb(218, 103, 103);
+}
+
+input {
+  width: 90%;
+  font-size: 1rem;
+}

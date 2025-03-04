@@ -4,114 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>checkWorldDays</title>
+  <link rel="stylesheet" href="../css/index.css">
   <style>
-    body {
-      text-align: center;
-    }
-
-    .listHeader {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .listHeader div {
-      border: 1px solid #cccccc;
-    }
-
     .listContent > div {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       border: 1px solid #cccccc;
     }
-
-    .btn {
-      border: none;
-      color: black;
-      width: 10rem;
-      height: 3rem;
-      margin-bottom: 1rem;
-      background: rgb(214, 230, 245);
-    }
-    
-    .btn:hover {
-      cursor: pointer;
-      background: rgb(0, 217, 255);
-    }
-
-    .addWorld {
-      display: none;
-      position: relative;
-      background-color: whitesmoke;
-      width: 16rem;
-      height: 20rem;
-      margin: 0 auto;
-    }
-
-    .addWorld > div > h3 {
-      padding-top: 1rem;
-    }
-
-    input {
-      width: 90%;
-      font-size: 1rem;
-    }
-
-    .addBtn {
-      border: none;
-      font-size: 1rem;
-      color: black;
-      width: 10rem;
-      height: 3rem;
-      margin-top: 1rem;
-      background: rgb(214, 230, 245);
-    }
-    
-    .addBtn:hover {
-      cursor: pointer;
-      background: rgb(0, 217, 255);
-    }
-
-    .clsBtn {
-      border: none;
-      font-size: 1rem;
-      color: black;
-      width: 10rem;
-      height: 3rem;
-      margin-top: 1rem;
-      background: rgb(255, 151, 151);
-    }
-    
-    .clsBtn:hover {
-      cursor: pointer;
-      background: rgb(218, 103, 103);
-    }
   </style>
 </head>
-<body>
+<body class="text-center">
   <h1>checkWorld</h1>
-  <button class="btn" onclick="modal()">월드 추가</button>
-  <div class="addWorld">
+  <button class="btn border-none color-black w-10 h-3 mb-1 mt-1 bg-pastel-blue" onclick="modal()">월드 추가</button>
+  <div class="addWorld display-none position-relative bg-whitesmoke w-16 h-20 m-auto">
     <form action="/addWorld">
       <div>
-        <h3>월드 이름</h3>
+        <h3 class="pt-1">월드 이름</h3>
         <div><input type="text" placeholder="worldName"></div>
       </div>
       <div>
-        <h3>현재 일수</h3>
+        <h3 class="pt-1">현재 일수</h3>
         <div><input type="text" placeholder="current day"></div>
       </div>
       <div>
-        <button class="addBtn" type="submit">추가 하기</button>
-        <button class="clsBtn" type="reset">취소 하기</button>
+        <button class="addBtn border-none color-black w-10 h-3 mb-1 mt-1 bg-pastel-blue" type="submit">추가 하기</button>
+        <button class="clsBtn border-none color-black w-10 h-3 mb-1 mt-1 bg-pastel-red" type="reset">취소 하기</button>
       </div>
     </form>
   </div>
   <div class="list">
-    <div class="listHeader">
-      <div>월드 이름</div>
-      <div>현재 일수</div>
-      <div>잔여 일수</div>
-      <div>달력 표시</div>
+    <div class="display-grid grid-column-1fr4">
+      <div class="border-ccc">월드 이름</div>
+      <div class="border-ccc">현재 일수</div>
+      <div class="border-ccc">잔여 일수</div>
+      <div class="border-ccc">달력 표시</div>
     </div>
     <div class="listContent">
       <div>

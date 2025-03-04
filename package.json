@@ -16,5 +16,8 @@
     "url": "https://github.com/YunJonghwan/checkWorldDays/issues"
   },
   "homepage": "https://github.com/YunJonghwan/checkWorldDays#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }

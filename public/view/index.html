@@ -4,8 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>checkWorldDays</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <style>
+    .listContent > div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      border: 1px solid #cccccc;
+    }
+  </style>
 </head>
-<body>
-  <h1>test</h1>
+<body class="text-center">
+  <h1>checkWorld</h1>
+  <button class="btn border-none color-black w-10 h-3 mb-1 mt-1 bg-pastel-blue">월드 추가</button>
+  <div class="addWorld display-none position-relative bg-whitesmoke w-16 h-20 m-auto">
+    <form action="/addWorld">
+      <div>
+        <h3 class="pt-1">월드 이름</h3>
+        <div><input type="text" placeholder="worldName"></div>
+      </div>
+      <div>
+        <h3 class="pt-1">현재 일수</h3>
+        <div><input type="text" placeholder="current day"></div>
+      </div>
+      <div>
+        <button class="addBtn border-none color-black w-10 h-3 mb-1 mt-1 bg-pastel-blue" type="submit">추가 하기</button>
+        <button class="clsBtn border-none color-black w-10 h-3 mb-1 mt-1 bg-pastel-red" type="reset">취소 하기</button>
+      </div>
+    </form>
+  </div>
+  <div class="list">
+    <div class="display-grid grid-column-1fr4">
+      <div class="border-ccc">월드 이름</div>
+      <div class="border-ccc">현재 일수</div>
+      <div class="border-ccc">잔여 일수</div>
+      <div class="border-ccc">달력 표시</div>
+    </div>
+    <div class="listContent"></div>
+  </div>
+  <script src="../js/index.js"></script>
 </body>
 </html>

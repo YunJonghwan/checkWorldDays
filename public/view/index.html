@@ -15,7 +15,7 @@
 </head>
 <body class="text-center">
   <h1>checkWorld</h1>
-  <button class="btn border-none color-black w-10 h-3 mb-1 mt-1 bg-pastel-blue" onclick="modal()">월드 추가</button>
+  <button class="btn border-none color-black w-10 h-3 mb-1 mt-1 bg-pastel-blue">월드 추가</button>
   <div class="addWorld display-none position-relative bg-whitesmoke w-16 h-20 m-auto">
     <form action="/addWorld">
       <div>
@@ -39,29 +39,8 @@
       <div class="border-ccc">잔여 일수</div>
       <div class="border-ccc">달력 표시</div>
     </div>
-    <div class="listContent">
-      <div>
-        <div>example100</div>
-        <div>100</div>
-        <div>80</div>
-        <div>05/23 (금)</div>
-      </div>
-      <div>
-        <div>example120</div>
-        <div>120</div>
-        <div>60</div>
-        <div>05/03 (토)</div>
-      </div>
-    </div>
+    <div class="listContent"></div>
   </div>
-  <script>
-    function modal() {
-      const modal = document.getElementsByClassName('addWorld')[0];
-      const list = document.getElementsByClassName('list')[0];
-      list.style.display = 'none';
-      modal.style.display = 'block';
-      console.log(modal);
-    }
-  </script>
+  <script src="../js/index.js"></script>
 </body>
 </html>

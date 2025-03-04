@@ -103,3 +103,9 @@ input {
   width: 90%;
   font-size: 1rem;
 }
+
+.listContent > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 1px solid #cccccc;
+}

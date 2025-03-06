@@ -12,6 +12,8 @@ function makeList() {
   btn.addEventListener('click', () => {
     const modal = document.getElementsByClassName('addWorld')[0];
     const list = document.getElementsByClassName('list')[0];
+    const btn = document.getElementsByClassName('btn')[0];
+    btn.style.display = 'none';
     list.style.display = 'none';
     modal.style.display = 'block';
   })

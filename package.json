@@ -17,6 +17,7 @@
   "homepage": "https://github.com/YunJonghwan/checkWorldDays#readme",
   "description": "",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1"
   }
 }
